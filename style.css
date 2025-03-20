@@ -1,3 +1,31 @@
 body{
-    background-color: black;
+    background-color: rgb(10, 6, 21);
+    color: antiquewhite;
+}
+nav{
+    background-color: #0f0c2b;
+    color: antiquewhite;
+    float:right;
+        ul{
+            list-style-type: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+        li{
+            display: inline-block;
+            margin: 20px;
+            a{
+                color: rgb(220, 174, 252);
+                transition: 0,5s all;
+            }
+            a:hover{
+                color: blueviolet;
+            }
+        }
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+    
 }
