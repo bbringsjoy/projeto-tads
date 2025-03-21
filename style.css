@@ -29,9 +29,17 @@ main{
     margin: auto;
 
 }
-.imagens{
-    width: 1200px;
+img{
+    
 }
+section.imagens{
+    div.art{
+    
+        width: 120px;
+    
+    }
+}
+    
 footer{
     text-align: center;
 }
