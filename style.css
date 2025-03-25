@@ -4,6 +4,13 @@ body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+a{
+    color: rgb(207, 146, 251);
+    transition: 0.4s all;
+}
+a:hover{
+    color: rgb(81, 81, 247);
+}
 header{
     background-color: #2c203c;
     a{
