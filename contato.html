@@ -13,7 +13,7 @@
     <body>
         <header>
             <a href="index.html" title="home">
-                <img src="banner-removebg-preview.png" alt="home">
+                <img src="imgs/banner-removebg-preview.png" alt="home">
             </a>
             <nav>
                 <ul>
@@ -51,41 +51,38 @@
             </nav>
         </header>
         <main>
-            <h1>Entre em contato</h1>
-            <form id="form">
-                <label>Nome completo</label>
-                <inbut type="text" id="nome"> </inbut>
-                <label>E-mail</label>
-                <inbut type="email" id="email"></inbut>
-                <label>Telefone</label>
-                <inbut type="text" id="telefone"></inbut>
-                <button type="button" id="botao">Enviar</button>
-            </form>
-            <script>
-                document.getElementById('botao').onclick = function() {
-                    var nome = document.getElementById('nome').value;
-                    var email = document.getElementById('email').value;
-                    var telefone = document.getElementById('telefone').value;
-                }
-                    if(nome == "" && email == "" && telefone == ""){
-                        alert("Por favor, preencha todos os campos");
-                    } else{ if(nome == ""){
-                        alert("Informe o nome completo")} }
-                        else{
-                        if(email == ""){
-                            alert("Informe o e-mail")
-                        } 
-                        else{
-                        if(telefone == ""){
-                            alert("Informe o telefone")
+            <section class="entre-contato">
+            <h1>ENTRE EM CONTATO</h1>
+                <form id="form">
+                    <label>Nome completo: </label>
+                    <input type="text" id="nome"> </input>
+                    <label>E-mail: </label>
+                    <input type="email" id="email"></input>
+                    <label>Telefone: </label>
+                    <input type="text" id="telefone"></input>
+                    <button type="button" id="botao">Enviar</button>
+                </form>
+                <script>
+                    document.getElementById('botao').onclick = function() {
+                        var nome = document.getElementById('nome').value;
+                        var email = document.getElementById('email').value;
+                        var telefone = document.getElementById('telefone').value;
+            
+                        if (nome == "" || email == "" || telefone == "") {
+                            if (nome == "") {
+                                alert("Informe o nome completo");
+                            } else if (email == "") {
+                                alert("Informe o e-mail");
+                            } else if (telefone == "") {
+                                alert("Informe o telefone");
+                            }
+                        } else {
+                            alert("Formulário enviado com sucesso!");
                         }
                     }
-                }
-                if(nome != "" && email != "" && telefone != ""){
-                    alert("Formulário enviado com sucesso!")
-                }
-            </script>
-
+                </script>
+            </section>
+            
         </main>
         <footer>
             <P> Desenvolvido por Beatriz Gomes Santana</P>
