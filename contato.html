@@ -10,82 +10,82 @@
 </head>
 
 <body>
-    <body>
-        <header>
-            <a href="index.html" title="home">
-                <img src="imgs/banner-removebg-preview.png" alt="home">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" title="Home">
-                            HOME
-                        </a>
-                    </li>
-                    <li>
-                        <a href="sobre.html" title="Sobre">
-                            SOBRE
-                        </a>
-                    </li>
-                    <li>
-                        <a href="galeria.html" title="Galeria de fotos">
-                            GALERIA DE FOTOS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="gameplay.html" title="Gameplay">
-                            GAMEPLAY
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html" title="Contato">
-                            CONTATO
-                        </a>
-                    </li>
-                    <li>
-                        <a href="jogo.html" title="Jogar agora">
-                            JOGAR
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="entre-contato">
+    <header>
+        <a href="index.html" title="home">
+            <img src="imgs/banner-removebg-preview.png" alt="home">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" title="Home">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre.html" title="Sobre">
+                        SOBRE
+                    </a>
+                </li>
+                <li>
+                    <a href="galeria.html" title="Galeria de fotos">
+                        GALERIA DE FOTOS
+                    </a>
+                </li>
+                <li>
+                    <a href="gameplay.html" title="Gameplay">
+                        GAMEPLAY
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html" title="Contato">
+                        CONTATO
+                    </a>
+                </li>
+                <li>
+                    <a href="jogo.html" title="Jogar agora">
+                        JOGAR
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contato">
+        <section class="entre-contato">
             <h1>ENTRE EM CONTATO</h1>
-                <form id="form">
-                    <label>Nome completo: </label>
-                    <input type="text" id="nome"> </input>
-                    <label>E-mail: </label>
-                    <input type="email" id="email"></input>
-                    <label>Telefone: </label>
-                    <input type="text" id="telefone"></input>
-                    <button type="button" id="botao">Enviar</button>
-                </form>
-                <script>
-                    document.getElementById('botao').onclick = function() {
-                        var nome = document.getElementById('nome').value;
-                        var email = document.getElementById('email').value;
-                        var telefone = document.getElementById('telefone').value;
-            
-                        if (nome == "" || email == "" || telefone == "") {
-                            if (nome == "") {
-                                alert("Informe o nome completo");
-                            } else if (email == "") {
-                                alert("Informe o e-mail");
-                            } else if (telefone == "") {
-                                alert("Informe o telefone");
-                            }
-                        } else {
-                            alert("Formulário enviado com sucesso!");
+            <form id="form">
+                <label>Nome completo: </label>
+                <input type="text" id="nome"> </input>
+                <label>E-mail: </label>
+                <input type="email" id="email"></input>
+                <label>Mensagem: </label>
+                <input type="text" id="mensagem"></input>
+                <button type="button" id="botao">Enviar</button>
+            </form>
+            <script>
+                document.getElementById('botao').onclick = function () {
+                    var nome = document.getElementById('nome').value;
+                    var email = document.getElementById('email').value;
+                    var telefone = document.getElementById('mensagem').value;
+
+                    if (nome == "" || email == "" || telefone == "") {
+                        if (nome == "") {
+                            alert("Informe o nome completo");
+                        } else if (email == "") {
+                            alert("Informe o e-mail");
+                        } else if (telefone == "") {
+                            alert("Escreva a mensagem");
                         }
+                    } else {
+                        alert("Formulário enviado com sucesso!");
                     }
-                </script>
-            </section>
-            
-        </main>
-        <footer>
-            <P> Desenvolvido por Beatriz Gomes Santana</P>
-        </footer>
+                }
+            </script>
+        </section>
+
+    </main>
+    <footer>
+        <P> Desenvolvido por Beatriz Gomes Santana</P>
+    </footer>
 </body>
+
 </html>
