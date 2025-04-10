@@ -155,17 +155,14 @@ form {
         }
     }
 }
-.gameplay{
-    margin: auto;
-    text-align: center;
-    padding: 80px; 
-    .iframe{
-        box-shadow: 0 0 8px rgb(205, 172, 243);
-        border: 3px;
-        padding: 0px;
-        margin: 7px;
+.video{
+    margin-left: 28%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 560px;
+    height: 315px;
     }
-}
+
 
 .entre-contato {
     color: rgb(220, 174, 252);
@@ -229,13 +226,17 @@ input, textarea {
             nav{
                 display: none;
                 border: 0;
+                text-align: center;
                     ul{
                 display:block;
                 margin: 0;
                 padding: 0;
+                text-align: center;
                     li{
+                        padding-left: 22%;
                         display: inline-block;
                         width: 100%;
+                        text-align: center;
                         a{
                         margin: 5px;
                         width: 50%;
@@ -270,23 +271,30 @@ input, textarea {
     .banner-mobile {
         padding: 30px;
         display: block;
-        width: 100%;
+        width: 75%;
         img{
            width: 50%;
+            border: 3px;
+            margin: 7px;
+            padding: px;
+            box-shadow: 0 0 8px rgb(205, 172, 243);
         }
         h1{
-            text-align: center;
-            P{
-                text-align: center;
+            text-align: left;
+           a p{
+                text-align: left;
+
             }
         }
     }
-    .gameplay {
-        position: relative;
+    .gameplay{
         width: 100%;
-        margin: 0;
-        max-width: 100px;
-        
+            .video{
+            width: 240px;
+            height: 135px;
+            margin-left: 5px;
+    
+            }
     }
 
     .iframe {
@@ -303,13 +311,17 @@ input, textarea {
     }
     main{
         width: 100%;
+        img{
+            margin-left: 8px;
+        }
         h1{
             width: 100%;
             text-align: center;
         }
         p{
             width: 100%;
-            text-align: center;
+            text-align: left;
+            margin-left: 8px;
         }
     }
     .grid{
