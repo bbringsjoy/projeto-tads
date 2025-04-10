@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link href="icon.png" rel="shortcut icon">
     <title>Jogar Agora</title>
 </head>
@@ -13,8 +14,12 @@
     <body>
         <header>
             <a href="index.html" title="home">
-                <img src="imgs/banner-removebg-preview.png" alt="home">
+                <img src="imgs/banner-removebg-preview.png" alt="home" class="image">
             </a>
+            
+            <a href="javascript:mostrarmenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+                </a>
             <nav>
                 <ul>
                     <li>
@@ -59,5 +64,16 @@
         <footer>
             <P> Desenvolvido por Beatriz Gomes Santana</P>
         </footer>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script>
+            function mostrarmenu() {
+                //document.querySelector('.header-nav')....
+                $("nav").toggle();
+            }
+        </script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

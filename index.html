@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link href="icon.png" rel="shortcut icon">
     <title>Página inicial</title>
 </head>
 
 <body>
-
-    <body>
         <header>
             <a href="index.html" title="home">
-                <img src="imgs/banner-removebg-preview.png" alt="home">
+                <img src="imgs/banner-removebg-preview.png" alt="home" class="image">
             </a>
-            </a>
+            
             <a href="javascript:mostrarmenu()" title="Menu" class="header-menu">
                 <i class="fa-solid fa-bars"></i>
             </a>
@@ -101,7 +100,7 @@
     <script>
         function mostrarmenu() {
             //document.querySelector('.header-nav')....
-            $(".header-nav").toggle();
+            $("nav").toggle();
         }
     </script>
     <script>
