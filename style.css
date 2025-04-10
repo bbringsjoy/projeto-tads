@@ -290,10 +290,12 @@ input, textarea {
     .gameplay{
         width: 100%;
             .video{
-            width: 240px;
-            height: 135px;
-            margin-left: 5px;
-    
+            width: 340px;
+            height: 235px;
+            margin-left: 20px;
+            padding-top: 70px ;
+            padding-bottom: 70px;    
+
             }
     }
 
@@ -354,6 +356,9 @@ input, textarea {
             height: auto;
             margin-bottom: 20px;
         }
+    }
+    body{
+        color: antiquewhite;
     }
     .form{
         display: flex;
