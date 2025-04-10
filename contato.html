@@ -63,27 +63,30 @@
                 <label> E-mail: </label>
                 <input type="email" id="email" placeholder="E-mail"></input>
                 <label>Mensagem: </label>
-                <textarea name="mensagem" id="mensagem" rows="5" placeholder="Envie sua mensagem aqui"></textarea>
+                <input type="text" id="mensagem" placeholder="Digite sua mensagem aqui"></input>
                 <button type="button" id="botao">Enviar</button>
             </form>
             <script>
                 document.getElementById('botao').onclick = function () {
-                    var nome = document.getElementById('nome').value;
-                    var email = document.getElementById('email').value;
-                    var telefone = document.getElementById('mensagem').value;
+                    let nome = document.getElementById('nome').value;
+                    let email = document.getElementById('email').value;
+                    let mensagem = document.getElementById('mensagem').value;
 
-                    if (nome == "" || email == "" || telefone == "") {
-                        if (nome == "") {
-                            alert("Informe o nome completo");
-                        } else if (email == "") {
-                            alert("Informe o e-mail");
-                        } else if (telefone == "") {
-                            alert("Escreva a mensagem");
-                        }
-                    } else {
-                        alert("Formulário enviado com sucesso!");
-                    }
-                }
+                    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+
+                    if (nome == "") {
+            alert("Informe o nome completo");
+        } else if (email == "") {
+            alert("Informe o e-mail");
+        } else if (!emailRegex.test(email)) {
+            alert("Informe um email válido");
+        } else if (mensagem == "") {
+            alert("Escreva a sua mensagem");
+        } else {
+            alert("Formulário enviado com sucesso!");
+        }
+    }
             </script>
         </section>
 
