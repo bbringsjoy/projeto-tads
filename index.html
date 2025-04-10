@@ -16,11 +16,10 @@
             <a href="index.html" title="home">
                 <img src="imgs/banner-removebg-preview.png" alt="home">
             </a>
-            <a href="javascript:elefante()" title="menu" class="header-menu">
+            </a>
+            <a href="javascript:mostrarmenu()" title="Menu" class="header-menu">
                 <i class="fa-solid fa-bars"></i>
             </a>
-            <a class="menu" href="javascript:mostrarmenu()" title="menu">
-            <img src="imgs/menu.png" alt="menu">
         </a>
             <nav>
                 <ul>
@@ -97,10 +96,16 @@
             <P> Desenvolvido por Beatriz Gomes Santana </P>
     </footer>
 
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
     <script>
-        function mostrarmenu(){
-            document.querySelector("header nav").classList.toggle("block");
+        function mostrarmenu() {
+            //document.querySelector('.header-nav')....
+            $(".header-nav").toggle();
         }
+    </script>
+    <script>
+        AOS.init();
     </script>
 
     </body>
